@@ -1,0 +1,88 @@
+.form {
+    width: 500px;
+    height: 400px;
+    box-shadow:  4px 4px 6px -1px rgb(80, 79, 79), -4px 4px 6px -1px rgb(80, 79, 79);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+
+    &__fieldset {
+        width: 400px;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border: none;
+    }
+
+    &__title {
+        font-family: sans-serif;
+    }
+
+    &__email,
+    &__pass {
+        width: 400px;
+        height: 35px;
+        margin-top: 5px;
+        border-radius: 5px;
+        padding: 5px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__submit {
+        font-family: sans-serif;
+        width: 120px;
+        height: 40px;
+        align-self: flex-end;
+        font-weight: bold;
+        color: #ffff;
+        background-color: #095DD6;
+        border-radius: 5px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__emai-title,
+    &__pass-title  {
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+
+    &__err-email,
+    &__err-pass  {
+        font-family: sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: -10px;
+        color: red;
+        visibility: hidden;
+    }
+}
+
+.show-err {
+    visibility: visible;     
+} 
+
+.green {
+    color: green !important;
+}
+
+.important {
+    color: red;
+    font-weight: bold;
+}
+
+#login {
+    width: 510px;
+    height: 410px;
+    margin: 0 auto;
+    margin-top: 200px;
+    //display: none;
+}
+
